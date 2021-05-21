@@ -13,7 +13,7 @@ const TodoListContainer = () => {
   return(
     <>
       <Controls todo={todo} onChangeTodo={({target})=>setTodo(target.value)} onClick={handleClick}/>
-      <TodoList todos={todosArray}/>
+      <TodoList todos={todosArray} handleClick={(e)=>e.target.style.textDecoration="line-through"}/>
     </>
   )
 }
